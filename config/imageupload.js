@@ -22,7 +22,7 @@ const imageupload = async (file) => {
     fs.writeFileSync(filePath, file.buffer);
 
     // Construct a public URL for the file
-    const imageUrl = `http://localhost:5000/uploads/${uniqueFileName}`;
+    const imageUrl = `https://newstaa.onrender.com/uploads/${uniqueFileName}`;
     console.log("imageUrl", imageUrl);
 
     return imageUrl;
